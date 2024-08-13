@@ -1,0 +1,19 @@
+{
+  "name": "airi",
+  "description": "Airi is ai assistants created using voicevox and gemini api",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.3",
+    "node-wav-player": "^1.0.0",
+    "play-sound": "^1.1.6",
+    "speaker": "^0.5.5",
+    "wav": "^1.0.2"
+  }
+}
