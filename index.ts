@@ -1,15 +1,17 @@
 import { SpeakerConstants } from "./src/constants/SpekerConstants";
-import { playAudio } from "./src/lib/speaker";
+import { generateResponse } from "./src/lib/gemini";
+import { generateAudio } from "./src/lib/speaker";
 import { generateVoice } from "./src/lib/voicevox";
 
-const text = "今日はいい天気ですね。";
 
 const main = async () => {
   try {
+    const text = await generateResponse("");
+    console.log(text);
     const random = Math.floor(Math.random() * SpeakerConstants.loli.length);
     const speakerId = SpeakerConstants.kuudere[random];
     const audio = await generateVoice(text, speakerId);
-    await playAudio(audio);
+    await generateAudio(audio);
   } catch (error) {
     console.log(error);
   }

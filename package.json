@@ -10,6 +10,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.17.0",
     "axios": "^1.7.3",
     "node-wav-player": "^1.0.0",
     "play-sound": "^1.1.6",

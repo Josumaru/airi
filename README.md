@@ -1,15 +1,21 @@
-# airi
+# AIRI - AI Voice Assistant with VoiceVox and Gemini API
 
-To install dependencies:
+This project demonstrates how to create an AI voice assistant using the VoiceVox TTS engine and Gemini API. It generates audio from text, plays it using a WAV player, and supports different speaker options.
 
-```bash
-bun install
-```
+## Features
 
-To run:
+- **Generate Voice**: Convert text to speech using VoiceVox.
+- **Play Audio**: Play the generated audio through a WAV player.
+- **Customizable Speakers**: Choose from various speakers for different voice styles.
 
-```bash
-bun run index.ts
-```
+## Installation
 
-This project was created using `bun init` in bun v1.0.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Josumaru/airi.git
+   cd airi
+   ```
+2. **Install dependecies**: Make sure you have  installed. Then, install the necessary packages:
+   ```bash
+   bun install
+   ```
